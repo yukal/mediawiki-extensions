@@ -1,0 +1,23 @@
+{
+	"name": "ErrorPage",
+	"author": "Alexander Yukal",
+	"descriptionmsg": "errorpage-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"MessagesDirs": {
+		"ErrorPage": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ErrorPage\\": "includes/"
+	},
+	"ExtensionMessagesFiles": {
+		"ErrorPageAlias": "includes/ErrorPageAlias.php"
+	},
+	"Hooks": {
+		"SkinTemplateNavigation::Universal": "MediaWiki\\Extension\\ErrorPage\\Hooks::onSkinTemplateNavigation",
+		"BeforeDisplayNoArticleText": "MediaWiki\\Extension\\ErrorPage\\Hooks::onBeforeDisplayNoArticleText"
+	},
+	"manifest_version": 2
+}

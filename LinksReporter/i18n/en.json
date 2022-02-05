@@ -1,0 +1,15 @@
+{
+    "@metadata": {
+        "authors": [
+            "Alexander Yukal"
+        ]
+    },
+    "linksreporter": "LinksReporter",
+    "linksreporter-name": "LinksReporter",
+    "linksreporter-desc": "Provides a list of affiliate articles",
+    "linksreporter-no-articles": "No articles have been added yet for today",
+    "linksreporter-added-pages": "Added pages",
+    "linksreporter-pages-in-cache": "Pages in the cache file",
+    "linksreporter-noaid": "Unable to load article by the specified ID: «$1».",
+    "linksreporter-noatype": "Accessing an unknown type of action: «$1»."
+}

@@ -1,0 +1,52 @@
+{
+    "name": "MMediaPlayer",
+    "description": "Multimedia Player based on html5 and jwplayer",
+    "version": "1.0.0",
+    "license-name": "MIT",
+    "author": "Alexander Yukal <yukal@email.ua>",
+    "url": "https://github.com/yukal/wiki-mmediaplayer",
+    "namemsg": "mmediaplayer-name",
+    "descriptionmsg": "mmediaplayer-desc",
+    "type": "parserhook",
+    "requires": {
+        "MediaWiki": ">= 1.29.0",
+        "platform": {
+            "php": ">= 7.0"
+        }
+    },
+    "MessagesDirs": {
+        "MMediaPlayer": [
+            "i18n"
+        ]
+    },
+    "AutoloadClasses": {
+        "MMediaPlayerHooks": "src/MMediaPlayer.hooks.php"
+    },
+    "ExtensionMessagesFiles": {
+        "MMediaPlayerMagic": "src/MMediaPlayer.magic.php"
+    },
+    "Hooks": {
+        "ParserFirstCallInit": "MMediaPlayerHooks::onParserFirstCallInit"
+    },
+    "ResourceModules": {
+        "ext.mMediaPlayer": {
+            "scripts": [
+                "jwplayer.js",
+                "ext.mMediaPlayer.js"
+            ],
+            "targets": [
+                "mobile",
+                "desktop"
+            ]
+        }
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "static",
+        "remoteExtPath": "MMediaPlayer/static"
+    },
+    "config": {
+        "MMediaPlayerWidth": 800,
+        "MMediaPlayerHeight": 600
+    },
+    "manifest_version": 1
+}
